@@ -13,7 +13,8 @@ Babel 的配置文件是.babelrc，存放在项目的根目录下。使用 Babel
 
 ```
 {
-    "presets": [],
+    "presets": [
+    ],
     "plugins": []
 }
 
@@ -23,6 +24,14 @@ $ npm install --save-dev @babel/preset-env
 
 //// react 转码规则
 $ npm install --save-dev @babel/preset-react
+
+{
+    "presets": [
+        "@babel/env",
+        "@babel/preset-react"
+    ],
+    "plugins": []
+}
 ```
 
 ## 命令行转码
